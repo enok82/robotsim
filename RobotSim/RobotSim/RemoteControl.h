@@ -3,8 +3,15 @@
 
 class RemoteControl
 {
+private:
+	IControllable &controllable_;
+
 public:
-	RemoteControl(Controllable & controllable);
+	RemoteControl(IControllable & controllable);
 	~RemoteControl();
+
+	void Program(Instructions & instructions);
+
+	void Run(void);
 };
 

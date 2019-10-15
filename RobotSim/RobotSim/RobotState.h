@@ -1,7 +1,7 @@
 #pragma once
 #include "Instructions.h"
 
-class RobotState
+class VehicleState
 {
 protected:
 	const unsigned int xLimit_ = 5;
@@ -11,7 +11,7 @@ protected:
 	compassDirection_e f_;
 
 public:
-	RobotState();
-	~RobotState();
+	VehicleState();
+	~VehicleState();
 
 };

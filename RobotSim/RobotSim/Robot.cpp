@@ -2,7 +2,7 @@
 #include "Robot.h"
 #include <iostream>
 
-Robot::Robot() : RobotState()
+Robot::Robot() : VehicleState()
 {
 }
 
@@ -125,6 +125,8 @@ std::string Robot::GetDirectionString(void)
 		break;
 	}
 	}
+
+	return directionString;
 }
 
 void Robot::Report(void)

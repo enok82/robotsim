@@ -3,7 +3,7 @@
 #include "Controllable.h"
 #include <string>
 
-class Robot : Controllable, RobotState
+class Robot : public IControllable, public VehicleState
 {
 public:
 	Robot();

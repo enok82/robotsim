@@ -1,11 +1,10 @@
 #pragma once
 #include "Instructions.h"
 
-class Controllable
+class IControllable
 {
 public:
-	Controllable();
-	~Controllable();
+	virtual ~IControllable() {};
 
 	virtual void Place(unsigned int x, unsigned int y, compassDirection_e f) = 0;
 
