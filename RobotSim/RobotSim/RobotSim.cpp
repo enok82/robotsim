@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 		std::string executable(argv[0]);
 		size_t pos = 0;
 
-		while ((pos = executable.substr(0, pos).find("\\")) != std::string::npos)
+		while ((pos = executable.substr(0, pos).find("\\")) != std::string::npos) //TODO: not working
 		{
 			;
 		}
