@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Controllable.h" />
+    <ClInclude Include="InputAquisition.h" />
     <ClInclude Include="Instructions.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RemoteControl.h" />
@@ -160,7 +161,7 @@
     <ClInclude Include="RobotState.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Instructions.cpp" />
+    <ClCompile Include="InputAquisition.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -175,6 +176,7 @@
   <ItemGroup>
     <Text Include="input_a.txt" />
     <Text Include="input_b.txt" />
+    <Text Include="input_c.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

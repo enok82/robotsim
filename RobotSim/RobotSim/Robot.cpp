@@ -1,6 +1,8 @@
 #include "pch.h"
-#include "Robot.h"
+
 #include <iostream>
+
+#include "Robot.h"
 
 Robot::Robot() : VehicleState()
 {

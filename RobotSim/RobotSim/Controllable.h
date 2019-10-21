@@ -14,5 +14,6 @@ public:
 
 	virtual void MoveForward(void) = 0;
 
+	virtual void Report(void) = 0;
 };
 

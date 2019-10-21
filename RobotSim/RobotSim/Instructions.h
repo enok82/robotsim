@@ -1,4 +1,5 @@
 #pragma once
+
 enum class compassDirection_e {
 	NORTH,
 	SOUTH,
@@ -11,11 +12,3 @@ enum class turnDirection_e {
 	RIGHT,
 };
 
-class Instructions
-{
-public:
-	Instructions();
-	~Instructions();
-
-	void Parse(void);
-};

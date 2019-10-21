@@ -36,6 +36,9 @@
     <ClInclude Include="Instructions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InputAquisition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -53,12 +56,13 @@
     <ClCompile Include="RemoteControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Instructions.cpp">
+    <ClCompile Include="InputAquisition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input_a.txt" />
     <Text Include="input_b.txt" />
+    <Text Include="input_c.txt" />
   </ItemGroup>
 </Project>
