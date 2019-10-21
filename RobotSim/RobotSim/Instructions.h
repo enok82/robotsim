@@ -1,6 +1,6 @@
 #pragma once
 
-enum class compassDirection_e {
+enum class compassDirection_e: unsigned int {
 	NORTH,
 	SOUTH,
 	WEST,

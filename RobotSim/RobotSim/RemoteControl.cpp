@@ -44,17 +44,17 @@ void RemoteControl::Run(void)
 			
 			size_t token = arguments.find(',');
 			
-			unsigned int x = stoi(arguments.substr(0, token));
+			unsigned int y = stoi(arguments.substr(0, token));
 			
 			arguments = arguments.substr(token + 1, std::string::npos);
 
 			token = arguments.find(',');
 
-			unsigned int y  = stoi(arguments.substr(0, token));
+			unsigned int x  = stoi(arguments.substr(0, token));
 			
 			arguments = arguments.substr(token + 1, std::string::npos);
 
-			controllable_.Place(x, y, directionMap[arguments]);
+			controllable_.Place(y, x, directionMap[arguments]);
 		}
 	}
 }
