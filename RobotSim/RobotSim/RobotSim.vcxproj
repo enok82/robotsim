@@ -177,6 +177,7 @@
     <Text Include="input_a.txt" />
     <Text Include="input_b.txt" />
     <Text Include="input_c.txt" />
+    <Text Include="input_syntax.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

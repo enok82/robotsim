@@ -30,6 +30,9 @@ InputAquisition::InputAquisition(int argc, char * argv[])
 		if (!instructionsFile.is_open())
 		{
 			perror(("Could not open " + fileName).c_str());
+
+			std::exit(EXIT_FAILURE);
+
 		}
 	}
 }

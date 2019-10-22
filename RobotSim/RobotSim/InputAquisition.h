@@ -13,4 +13,3 @@ public:
 
 	std::vector<std::string> AquireInput(void);
 };
-

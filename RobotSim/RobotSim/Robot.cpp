@@ -19,7 +19,6 @@ void Robot::Place(unsigned int y,unsigned int x, compassDirection_e f)
 	f_ = f;
 
 	isPlaced = true;
-	std::cout << "Placing " << y_ << " " << x_ << " " << (unsigned int)f_ << std::endl;
 }
 
 void Robot::TurnRobot(turnDirection_e t)
@@ -68,30 +67,25 @@ void Robot::TurnRight(void)
 
 void Robot::MoveForward(void)
 {
-	std::cout << "Moving ";
 	switch (f_)
 	{
 	case compassDirection_e::NORTH:
 	{
-		std::cout << "x ";
 		ConstrainMovement(x_, xLimit_, 1);
 		break;
 	}
 	case compassDirection_e::SOUTH:
 	{
-		std::cout << "x ";
 		ConstrainMovement(x_, xLimit_, -1);
 		break;
 	}
 	case compassDirection_e::EAST:
 	{
-		std::cout << "y ";
 		ConstrainMovement(y_, yLimit_, 1);
 		break;
 	}
 	case compassDirection_e::WEST:
 	{
-		std::cout << "y ";
 		ConstrainMovement(y_, yLimit_, -1);
 		break;
 	}
@@ -104,12 +98,10 @@ void Robot::MoveForward(void)
 
 void Robot::ConstrainMovement(unsigned int &axis, unsigned int limit, int step)
 {
-	std::cout << step << " " << axis << " ";
 	if (isPlaced == true)
 	{
 		axis = (axis + step) <= limit ? axis + step : axis;
 	}
-	std::cout << axis << std::endl;
 }
 
 std::string Robot::GetDirectionString(void)
@@ -152,6 +144,5 @@ void Robot::Report(void)
 	if (isPlaced == true)
 	{
 		std::cout << y_ << ',' << x_ << ',' << GetDirectionString() << std::endl;
-
 	}
 }
